@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "GoudyStMRegular";
+  src: url("../fonts/GoudyStM-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "GoudyStMItalic";
+  src: url("../fonts/GoudyStM-Italic-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  src: url("../fonts/Vollkorn-Regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Vollkorn";
+  font-style: italic;
+  src: url("../fonts/Vollkorn-Italic.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "League Spartan VF";
+  src: url("../fonts/LeagueSpartan-VF.woff2") format("woff2-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: oblique 0deg 20deg; }
+
+@font-face {
+  font-family: "League Gothic Condensed";
+  src: url("../fonts/LeagueGothic-Condensed.woff2") format("woff2");
+  font-style: normal; }
+
+body {
+  background-color: white;
+  font-family: "Vollkorn", "GoudyStMRegular", "Liberation Serif", serif; }
+
+a {
+  color: #e80a59;
+  text-decoration: none; }
+  a[href^="mailto"]::before {
+    content: "📧 "; }
+  a[href^="tel"]::before {
+    content: "📞 "; }
+  a:hover {
+    color: #458a6b; }
+
+.nav a {
+  font-size: 1.3rem;
+  font-family: "League Spartan VF", sans-serif;
+  color: #387556; }
+  .nav a:hover {
+    color: #458a6b; }
+
+.logo {
+  max-height: 180px; }
+
+.colbox h2 {
+  color: #e80a59; }
+
+:is(h1, h2, h3, h4, h5) {
+  font-family: "League Spartan VF", sans-serif;
+  font-variation-settings: "wght" 550; }
+
+h3 {
+  border-bottom: 1px solid #d3cdc5;
+  font-variation-settings: "wght" 450;
+  color: #4c4e50; }
+
+h4 {
+  font-variation-settings: "wght" 450; }
+  h4 a, h4 a:visited {
+    color: #4c4e50; }
+  h4 a:hover {
+    color: #e80a59; }
+
+p, li {
+  font-size: 1.2rem; }
+
+.ch-row {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem 3rem; }
+  .ch-row p {
+    color: #191c1f; }
+    .ch-row p.highlight {
+      color: #1a6644;
+      border-left: 5px solid #458a6b;
+      padding-left: 10px; }
+
+#intro p {
+  padding: .5rem; }
