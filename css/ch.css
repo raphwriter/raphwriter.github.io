@@ -46,19 +46,23 @@ a {
 .nav a {
   font-size: 1.3rem;
   font-family: "League Spartan VF", sans-serif;
-  color: #387556; }
+  color: white; }
   .nav a:hover {
-    color: #458a6b; }
+    color: #e80a59;
+    background-color: #ffffff; }
+
+.bg-magenta {
+  background-color: #e80a59; }
 
 .logo {
-  max-height: 180px; }
+  max-height: 140px; }
 
 .colbox h2 {
   color: #e80a59; }
 
 :is(h1, h2, h3, h4, h5) {
   font-family: "League Spartan VF", sans-serif;
-  font-variation-settings: "wght" 550; }
+  font-variation-settings: "wght" 250; }
 
 h3 {
   border-bottom: 1px solid #d3cdc5;
@@ -88,3 +92,10 @@ p, li {
 
 #intro p {
   padding: .5rem; }
+
+.side-menu {
+  z-index: 1000;
+  top: 4rem; }
+
+#intro, #ablauf, #kontakt, #leistungen, #lst-leichtesprache, #lst-lektorat, #lst-redaktion, #uebermich {
+  scroll-margin-top: 4rem; }

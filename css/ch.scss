@@ -2,7 +2,9 @@ $color-background: rgb(255, 255, 255);
 $color-boxes: rgb(255, 255, 255);
 $color-magenta: rgb(232, 10, 89);
 $color-submenu: rgb(76, 78, 80);
-$color-menu: rgb(56, 117, 86);
+$color-menu: rgb(255, 255, 255);
+$color-menu-highlight: $color-magenta;
+//$color-menu: rgb(56, 117, 86);
 $color-text: rgb(25, 28, 31);
 $color-highlight: rgb(69, 138, 107);
 $color-highlight-text: rgb(26, 102, 68);
@@ -23,11 +25,13 @@ $color-gray-light: rgb(211, 205, 197);
   font-style: normal;
   src: url("../fonts/Vollkorn-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   src: url("../fonts/Vollkorn-Italic.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "League Spartan VF";
   src: url("../fonts/LeagueSpartan-VF.woff2") format("woff2-variations");
@@ -71,12 +75,17 @@ a {
   color: $color-menu;
 
   &:hover {
-    color: $color-highlight;
+    color: $color-menu-highlight;
+    background-color: #ffffff;
   }
 }
 
+.bg-magenta {
+  background-color: $color-magenta;
+}
+
 .logo {
-  max-height: 180px;
+  max-height: 140px;
 }
 
 .colbox {
@@ -88,7 +97,7 @@ a {
 
 :is(h1, h2, h3, h4, h5) {
   font-family: "League Spartan VF", sans-serif;
-  font-variation-settings: "wght" 550;
+  font-variation-settings: "wght" 250;
   //line-height: 1.1;
 }
 
@@ -97,15 +106,15 @@ h3 {
   border-bottom: 1px solid $color-gray-light;
   font-variation-settings: "wght" 450;
   color: $color-submenu;
-
 }
 
 h4 {
-    font-variation-settings: "wght" 450;
+  font-variation-settings: "wght" 450;
 
   a, a:visited {
     color: $color-submenu;
   }
+
   a:hover {
     color: $color-magenta;
   }
@@ -131,11 +140,12 @@ p {
   p {
     //font-family: "Liberation Serif";
     color: $color-text;
-  &.highlight {
-    color: $color-highlight-text;
-    border-left: 5px solid $color-highlight;
-    padding-left: 10px;
-  }
+
+    &.highlight {
+      color: $color-highlight-text;
+      border-left: 5px solid $color-highlight;
+      padding-left: 10px;
+    }
   }
 }
 
@@ -145,3 +155,13 @@ p {
     padding: .5rem;
   }
 }
+
+.side-menu {
+  z-index: 1000;
+    top: 4rem;
+}
+
+#intro, #ablauf, #kontakt, #leistungen, #lst-leichtesprache, #lst-lektorat, #lst-redaktion, #uebermich {
+  scroll-margin-top: 4rem;
+}
+
