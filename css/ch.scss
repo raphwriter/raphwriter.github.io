@@ -1,3 +1,5 @@
+@import "bootstrap/bootstrap.scss";
+
 $color-background: rgb(255, 255, 255);
 $color-boxes: rgb(255, 255, 255);
 $color-magenta: rgb(232, 10, 89);
@@ -60,40 +62,59 @@ a {
   color: $color-magenta;
   text-decoration: none;
 
-  &[href^="mailto"]::before {
-    content: "📧 ";
-  }
-
-  &[href^="tel"]::before {
-    content: "📞 ";
-  }
+  //&[href^="mailto"]::before {
+  //  content: "📧 ";
+  //}
+  //
+  //&[href^="tel"]::before {
+  //  content: "📞 ";
+  //}
 
   &:hover {
     color: $color-highlight;
   }
+  &:focus-visible,
+    &.nav-link:focus-visible {
+      border: 3px solid $color-magenta;
+    }
 }
 
-.nav a,
-nav a {
-  font-size: 1.3rem;
-  font-family: $font-sans;
-  color: $color-menu;
-
-  &:hover,
-  &.nav-link:hover {
-    color: $color-menu-highlight;
-    background-color: #ffffff;
-  }
-
-  &:visited,
-  &:link {
+.nav,
+nav {
+  a {
+    font-size: 1.3rem;
+    font-family: $font-sans;
     color: $color-menu;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    &:hover,
+    &.nav-link:hover {
+      color: $color-menu-highlight;
+      background-color: #ffffff;
+      border-radius: 3px;
+    }
+
+    &:visited,
+    &:link {
+      color: $color-menu;
+    }
+
+    &:focus,
+    &.nav-link:focus {
+      color: white;
+    }
+    &:focus-visible,
+    &.nav-link:focus-visible {
+      border: 3px solid white;
+    }
   }
 }
 
 .navbar-toggler {
   font-family: $font-sans;
   line-height: unset;
+
   &:focus {
     border: 2px solid white;
     outline: none;
@@ -160,8 +181,8 @@ p {
 
 .ch-row {
   background-color: $color-boxes;
-  margin-bottom: 2rem;
-  padding: 2rem 1rem 3rem;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem;
 
   p {
     //font-family: "Liberation Serif";
@@ -184,10 +205,25 @@ p {
 
 .side-menu {
   z-index: 1000;
-    top: 4rem;
+  top: 5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: .5rem;
+  border-top: 1px solid $color-gray-light;
+
+  a {
+    color: $color-submenu;
+    font-family: $font-sans;
+
+    &:hover {
+      color: $color-magenta;
+    }
+  }
 }
 
 #intro, #ablauf, #kontakt, #leistungen, #lst-leichtesprache, #lst-lektorat, #lst-redaktion, #uebermich {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 5rem;
 }
 
