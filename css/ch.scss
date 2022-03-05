@@ -10,6 +10,7 @@ $color-highlight: rgb(69, 138, 107);
 $color-highlight-text: rgb(26, 102, 68);
 $color-gray-light: rgb(211, 205, 197);
 
+
 @font-face {
   font-family: "GoudyStMRegular";
   src: url("../fonts/GoudyStM-webfont.woff") format("woff");
@@ -46,9 +47,12 @@ $color-gray-light: rgb(211, 205, 197);
   font-style: normal;
 }
 
+$font-sans: "League Spartan VF", Helvetica, Arial, sans-serif;
+$font-serif: "Vollkorn", "GoudyStMRegular", "Liberation Serif", serif;
+
 body {
   background-color: $color-background;
-  font-family: "Vollkorn", "GoudyStMRegular", "Liberation Serif", serif;
+  font-family: $font-serif;
 }
 
 a {
@@ -69,14 +73,31 @@ a {
   }
 }
 
-.nav a {
+.nav a,
+nav a {
   font-size: 1.3rem;
-  font-family: "League Spartan VF", sans-serif;
+  font-family: $font-sans;
   color: $color-menu;
 
-  &:hover {
+  &:hover,
+  &.nav-link:hover {
     color: $color-menu-highlight;
     background-color: #ffffff;
+  }
+
+  &:visited,
+  &:link {
+    color: $color-menu;
+  }
+}
+
+.navbar-toggler {
+  font-family: $font-sans;
+  line-height: unset;
+  &:focus {
+    border: 2px solid white;
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -92,11 +113,12 @@ a {
   //background-color: $color-magenta;
   h2 {
     color: $color-magenta;
+    line-height: 1;
   }
 }
 
 :is(h1, h2, h3, h4, h5) {
-  font-family: "League Spartan VF", sans-serif;
+  font-family: $font-sans;
   font-variation-settings: "wght" 250;
   //line-height: 1.1;
 }
@@ -123,6 +145,10 @@ h4 {
 :not(h1, h2, h3, h4, h5) {
 }
 
+ul, ol {
+  padding-left: 1rem;
+}
+
 p, li {
   font-size: 1.2rem;
 }
@@ -143,8 +169,8 @@ p {
 
     &.highlight {
       color: $color-highlight-text;
-      border-left: 5px solid $color-highlight;
-      padding-left: 10px;
+      //border-left: 5px solid $color-highlight;
+      //padding-left: 10px;
     }
   }
 }

@@ -7,52 +7,71 @@
     <title>Carolina Hüttinger</title>
 </head>
 <body>
-    <div class="row mt-5 mb-5 g-0">
-        <div class="col align-self-center text-center">
-            <img src="img/logo_kreis.png" alt="Logo CH" class="logo mw-100 mb-3">
-            <h1 class="display-3">Carolina Hüttinger</h1>
-            <h2>Lektorat &middot; Redaktion &middot; Leichte Sprache</h2>
+<div class="row mt-5 mb-5 g-0">
+    <div class="col align-self-center text-center">
+        <img src="img/logo_kreis.png" alt="Logo CH" class="logo mw-100 mb-3">
+        <h1 class="display-3">Carolina Hüttinger</h1>
+        <h2>Lektorat &middot; Redaktion &middot; Leichte Sprache</h2>
+    </div>
+</div>
+<!--</div>-->
+<nav class="navbar navbar-expand-lg sticky-top bg-magenta text-white" id="menu">
+    <div class="container-fluid">
+<!--        <a class="navbar-brand" href="#">Menü</a>-->
+        <button class="navbar-toggler w-100 align-middle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon w-100 text-white">MENÜ</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#leistungen">Leistungen</a>
+                <a class="nav-link" href="#ablauf">Ablauf</a>
+                <a class="nav-link" href="#uebermich">Über mich</a>
+                <a class="nav-link" href="#preise">Preise</a>
+                <a class="nav-link" href="#kontakt">Kontakt und Impressum</a>
+            </div>
         </div>
     </div>
-    <!--</div>-->
-    <div class="bg-magenta sticky-top" id="menu">
-        <div class="col g-0">
-            <ul class="nav  nav-fill mb-2 justify-content-md-start justify-content-sm-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#leistungen">Leistungen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ablauf">Ablauf</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#uebermich">Über mich</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#preise">Preise</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">Kontakt & Impressum</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <img class="mw-100" src="img/linie.png" alt="Line">
-    </div>
+</nav>
+<!--<div class="bg-magenta sticky-top" id="menu">-->
+<!--    <div class="col g-0">-->
+<!--        <ul class="nav nav-fill mb-2 justify-content-md-start justify-content-sm-center">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#leistungen">Leistungen</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#ablauf">Ablauf</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#uebermich">Über mich</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#preise">Preise</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#kontakt">Kontakt und Impressum</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+<div>
+    <img class="mw-100" src="img/linie.png" alt="Line">
+</div>
 <div class="container">
     <div class="row ch-row" id="intro">
-        <div class="col-9 my-5">
-            <p class="">Als selbstständige Lektorin mit jahrelanger Erfahrung biete ich Lektorat und
+        <div class="col-12 col-lg-9 my-5">
+            <p class="">
+                Als selbstständige Lektorin mit jahrelanger Erfahrung biete ich Lektorat und
                 Redaktion diverser Publikationen sowie Umwandlung von Texten in Leichte oder Einfache Sprache.
             </p>
-            <p>In meinem Beruf kann ich mein Interesse an Sprache und der Aufbereitung
+            <p>
+                In meinem Beruf kann ich mein Interesse an Sprache und der Aufbereitung
                 von Inhalten mit meinen vielfältigen Interessen und meiner Neugier an allen möglichen Bereichen verbinden.
                 Besonders die zielgruppengerechte Vermittlung der Inhalte liegt mir am Herzen.
             </p>
         </div>
     </div>
     <div class="row ch-row" id="leistungen">
-        <div class="col-md-4 col-lg-3 text-md-end colbox">
+        <div class="col-lg-4 col-xl-3 text-lg-end colbox">
             <div class="sticky-top side-menu">
                 <h2 class="display-5 align-middle">Leistungen</h2>
                 <h4 class=""><a href="#lst-lektorat">Lektorat</a></h4>
@@ -60,8 +79,13 @@
                 <h4><a href="#lst-leichtesprache">Leichte Sprache</a></h4>
             </div>
         </div>
-        <div class="col ms-md-3">
-            <div id="lst-lektorat" class="mb-5 mt-3 mt-md-0">
+        <div class="col">
+            <div id="lst-lektorat" class="mb-5 mt-3 mt-lg-0">
+                <p class="highlight my-4">
+                    Ob ich Ihren Text als Lektorin oder Redakteurin betreuen kann, hängt von seinem Inhalt ab.
+                    Aufgrund meiner Ausbildungen kann ich insbesondere Texte redigieren, die <span class="fw-bold">methodisch-didaktisches Wissen, mathematische
+                    Kenntnisse, ein technisches, sprach- oder medienwissenschaftliches Verständnis</span> voraussetzen.
+                </p>
                 <h3>Lektorat</h3>
                 <p>Das Lektorat umfasst in der Regel folgende Leistungen:</p>
                 <ul>
@@ -89,11 +113,7 @@
                     <li>Autor*innen-Management</li>
                     <li>Projektmanagement</li>
                 </ul>
-                <p class="highlight my-4">
-                    Ob ich Ihren Text als Lektorin oder Redakteurin betreuen kann, hängt von seinem Inhalt ab.
-                    Aufgrund meiner Ausbildungen kann ich insbesondere Texte redigieren, die <span class="fw-bold">methodisch-didaktisches Wissen, mathematische
-                    Kenntnisse, ein technisches, sprach- oder medienwissenschaftliches Verständnis</span> voraussetzen.
-                </p>
+
                 <p>Mit Ausnahme literarischer Texte bearbeite ich alle Textsorten. Besonders viel Erfahrung habe ich mit:</p>
                 <ul>
                     <li>Unterrichtsmitteln aller Art (Schulbüchern, digitalen Lern- und Lehrmitteln etc.)</li>
@@ -113,7 +133,7 @@
         </div>
     </div>
     <div class="row ch-row" id="ablauf">
-        <div class="col-md-4 col-lg-3 text-md-end colbox">
+        <div class="col-lg-4 col-xl-3 text-lg-end colbox">
             <div class="sticky-top side-menu">
                 <h2 class="display-5 align-middle">Ablauf</h2>
             </div>
@@ -128,7 +148,7 @@
         </div>
     </div>
     <div class="row ch-row" id="uebermich">
-        <div class="col-md-4 col-lg-3 text-md-end colbox">
+        <div class="col-lg-4 col-xl-3 text-lg-end colbox">
             <div class="sticky-top side-menu">
                 <h2 class="display-5">Über mich</h2>
             </div>
@@ -139,16 +159,16 @@
                 Absolvierte Ausbildungen:
             </p>
             <ul>
-                <li>Magisterstudium Mathematik <span class="text-muted">an der Universität Salzburg</span></li>
-                <li>Bachelorstudium Romanistik/Spanisch<span class="text-muted"> an der Universität Wien</span></li>
-                <li>Diplomlehrgang Berufs- und Bildungsberatung<span class="text-muted"> am WIFI Wien</span></li>
-                <li>Deutsch als Fremdsprache / Deutsch als Zweitsprache<span class="text-muted"> an der Universität Salzburg und Universität Wien</span></li>
-                <li>Lehrgang „Leicht Lesen“ <span class="text-muted">bei capito Graz</span></li>
+                <li>Magisterstudium Mathematik <br>an der Universität Salzburg</li>
+                <li>Bachelorstudium Romanistik/Spanisch <br>an der Universität Wien</li>
+                <li>Diplomlehrgang Berufs- und Bildungsberatung <br>am WIFI Wien</li>
+                <li>Deutsch als Fremdsprache / Deutsch als Zweitsprache <br>an der Universität Salzburg und Universität Wien</li>
+                <li>Lehrgang „Leicht Lesen“ <br>bei capito Graz</li>
             </ul>
         </div>
     </div>
     <div class="row ch-row" id="preise">
-        <div class="col-md-4 col-lg-3 text-md-end colbox">
+        <div class="col-lg-4 col-xl-3 text-lg-end colbox">
             <div class="sticky-top side-menu">
                 <h2 class="display-5">Preise</h2>
             </div>
@@ -160,7 +180,7 @@
         </div>
     </div>
     <div class="row ch-row" id="kontakt">
-        <div class="col-md-4 col-lg-3 text-md-end colbox">
+        <div class="col-lg-4 col-xl-3 text-lg-end colbox">
             <div class="sticky-top side-menu">
                 <h2 class="display-5">Kontakt und Impressum</h2>
             </div>
@@ -169,12 +189,13 @@
             <address>
                 <p>Mag.<sup>a</sup> Carolina Hüttinger, BA<br>
                     Steingasse 71 <br>5020 Salzburg <br>
-                    <a href="mailto:info@carolinahuettinger.at">info@carolinahuettinger.at / carolina.huettinger@gmx.at</a><br>
-                    <a href="tel:+4365012345656">+43 650 892 44 60</a>
+                    <a href="mailto:kontakt@carolinahuettinger.at">kontakt@carolinahuettinger.at</a><br>
                 </p>
             </address>
         </div>
     </div>
 </div>
+<script src="js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 </html>

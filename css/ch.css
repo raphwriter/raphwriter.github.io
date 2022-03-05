@@ -43,13 +43,28 @@ a {
   a:hover {
     color: #458a6b; }
 
-.nav a {
+.nav a,
+nav a {
   font-size: 1.3rem;
-  font-family: "League Spartan VF", sans-serif;
+  font-family: "League Spartan VF", Helvetica, Arial, sans-serif;
   color: white; }
-  .nav a:hover {
+  .nav a:hover, .nav a.nav-link:hover,
+  nav a:hover,
+  nav a.nav-link:hover {
     color: #e80a59;
     background-color: #ffffff; }
+  .nav a:visited, .nav a:link,
+  nav a:visited,
+  nav a:link {
+    color: white; }
+
+.navbar-toggler {
+  font-family: "League Spartan VF", Helvetica, Arial, sans-serif;
+  line-height: unset; }
+  .navbar-toggler:focus {
+    border: 2px solid white;
+    outline: none;
+    box-shadow: none; }
 
 .bg-magenta {
   background-color: #e80a59; }
@@ -58,10 +73,11 @@ a {
   max-height: 140px; }
 
 .colbox h2 {
-  color: #e80a59; }
+  color: #e80a59;
+  line-height: 1; }
 
 :is(h1, h2, h3, h4, h5) {
-  font-family: "League Spartan VF", sans-serif;
+  font-family: "League Spartan VF", Helvetica, Arial, sans-serif;
   font-variation-settings: "wght" 250; }
 
 h3 {
@@ -76,6 +92,9 @@ h4 {
   h4 a:hover {
     color: #e80a59; }
 
+ul, ol {
+  padding-left: 1rem; }
+
 p, li {
   font-size: 1.2rem; }
 
@@ -86,9 +105,7 @@ p, li {
   .ch-row p {
     color: #191c1f; }
     .ch-row p.highlight {
-      color: #1a6644;
-      border-left: 5px solid #458a6b;
-      padding-left: 10px; }
+      color: #1a6644; }
 
 #intro p {
   padding: .5rem; }
