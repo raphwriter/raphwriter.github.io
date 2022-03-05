@@ -12,17 +12,6 @@ $color-highlight: rgb(69, 138, 107);
 $color-highlight-text: rgb(26, 102, 68);
 $color-gray-light: rgb(211, 205, 197);
 
-
-@font-face {
-  font-family: "GoudyStMRegular";
-  src: url("../fonts/GoudyStM-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "GoudyStMItalic";
-  src: url("../fonts/GoudyStM-Italic-webfont.woff") format("woff");
-}
-
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
@@ -43,18 +32,13 @@ $color-gray-light: rgb(211, 205, 197);
   font-style: oblique 0deg 20deg;
 }
 
-@font-face {
-  font-family: "League Gothic Condensed";
-  src: url("../fonts/LeagueGothic-Condensed.woff2") format("woff2");
-  font-style: normal;
-}
-
 $font-sans: "League Spartan VF", Helvetica, Arial, sans-serif;
-$font-serif: "Vollkorn", "GoudyStMRegular", "Liberation Serif", serif;
+$font-serif: "Vollkorn", "Liberation Serif", Georgia, Times, serif;
 
 body {
   background-color: $color-background;
   font-family: $font-serif;
+  font-weight: lighter;
 }
 
 a {
@@ -181,7 +165,7 @@ p {
 
 .ch-row {
   background-color: $color-boxes;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   padding: 1rem 1rem 1rem;
 
   p {

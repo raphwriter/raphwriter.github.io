@@ -7744,14 +7744,6 @@ textarea.form-control-lg {
     display: none !important; } }
 
 @font-face {
-  font-family: "GoudyStMRegular";
-  src: url("../fonts/GoudyStM-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: "GoudyStMItalic";
-  src: url("../fonts/GoudyStM-Italic-webfont.woff") format("woff"); }
-
-@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   src: url("../fonts/Vollkorn-Regular.woff2") format("woff2"); }
@@ -7768,14 +7760,10 @@ textarea.form-control-lg {
   font-stretch: 75% 125%;
   font-style: oblique 0deg 20deg; }
 
-@font-face {
-  font-family: "League Gothic Condensed";
-  src: url("../fonts/LeagueGothic-Condensed.woff2") format("woff2");
-  font-style: normal; }
-
 body {
   background-color: white;
-  font-family: "Vollkorn", "GoudyStMRegular", "Liberation Serif", serif; }
+  font-family: "Vollkorn", "Liberation Serif", Georgia, Times, serif;
+  font-weight: lighter; }
 
 a {
   color: #e80a59;
@@ -7853,7 +7841,7 @@ p, li {
 
 .ch-row {
   background-color: white;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   padding: 1rem 1rem 1rem; }
   .ch-row p {
     color: #191c1f; }
