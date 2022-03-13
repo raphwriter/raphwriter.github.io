@@ -1,4 +1,4 @@
-@import "bootstrap/bootstrap.scss";
+//@import "bootstrap/bootstrap.scss";
 
 $color-background: rgb(255, 255, 255);
 $color-boxes: rgb(255, 255, 255);
@@ -38,7 +38,6 @@ $font-serif: "Vollkorn", "Liberation Serif", Georgia, Times, serif;
 body {
   background-color: $color-background;
   font-family: $font-serif;
-  font-weight: lighter;
 }
 
 a {
@@ -46,37 +45,30 @@ a {
   color: $color-magenta;
   text-decoration: none;
 
-  //&[href^="mailto"]::before {
-  //  content: "📧 ";
-  //}
-  //
-  //&[href^="tel"]::before {
-  //  content: "📞 ";
-  //}
-
   &:hover {
     color: $color-highlight;
   }
+
   &:focus-visible,
-    &.nav-link:focus-visible {
-      border: 3px solid $color-magenta;
-    }
+  &.nav-link:focus-visible {
+    border: 3px solid $color-magenta;
+  }
 }
 
-.nav,
-nav {
+.nav, nav {
+
   a {
-    font-size: 1.3rem;
-    font-family: $font-sans;
     color: $color-menu;
+    font-family: $font-sans;
+    font-size: 1.3rem;
     margin-left: 3rem;
     margin-right: 3rem;
 
     &:hover,
     &.nav-link:hover {
-      color: $color-menu-highlight;
       background-color: #ffffff;
       border-radius: 3px;
+      color: $color-menu-highlight;
     }
 
     &:visited,
@@ -88,6 +80,7 @@ nav {
     &.nav-link:focus {
       color: white;
     }
+
     &:focus-visible,
     &.nav-link:focus-visible {
       border: 3px solid white;
@@ -98,11 +91,13 @@ nav {
 .navbar-toggler {
   font-family: $font-sans;
   line-height: unset;
+  min-width: 100%;
 
   &:focus {
     border: 2px solid white;
     outline: none;
     box-shadow: none;
+
   }
 }
 
@@ -115,7 +110,6 @@ nav {
 }
 
 .colbox {
-  //background-color: $color-magenta;
   h2 {
     color: $color-magenta;
     line-height: 1;
@@ -129,7 +123,6 @@ nav {
 }
 
 h3 {
-  //font-variation-settings: "wght" 550;
   border-bottom: 1px solid $color-gray-light;
   font-variation-settings: "wght" 450;
   color: $color-submenu;
@@ -147,20 +140,13 @@ h4 {
   }
 }
 
-:not(h1, h2, h3, h4, h5) {
-}
-
 ul, ol {
   padding-left: 1rem;
 }
 
 p, li {
   font-size: 1.2rem;
-}
-
-p {
-  //font-family: "GoudyStMRegular", "Liberation Serif", serif;
-
+  font-family: $font-serif;
 }
 
 .ch-row {
@@ -169,13 +155,10 @@ p {
   padding: 1rem 1rem 1rem;
 
   p {
-    //font-family: "Liberation Serif";
     color: $color-text;
 
     &.highlight {
       color: $color-highlight-text;
-      //border-left: 5px solid $color-highlight;
-      //padding-left: 10px;
     }
   }
 }
@@ -211,3 +194,11 @@ p {
   scroll-margin-top: 5rem;
 }
 
+.nr {
+    font-family: $font-sans;
+    //font-variation-settings: "slnt" 250;
+}
+
+address {
+  font-family: $font-serif;
+}
