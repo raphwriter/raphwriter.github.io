@@ -118,18 +118,22 @@ a {
 
 :is(h1, h2, h3, h4, h5) {
   font-family: $font-sans;
-  font-variation-settings: "wght" 250;
+  font-variation-settings: "wght" 350;
   //line-height: 1.1;
+}
+
+h2 {
+  font-variation-settings: "wght" 350;
 }
 
 h3 {
   border-bottom: 1px solid $color-gray-light;
-  font-variation-settings: "wght" 450;
+  font-variation-settings: "wght" 350;
   color: $color-submenu;
 }
 
 h4 {
-  font-variation-settings: "wght" 450;
+  font-variation-settings: "wght" 350;
 
   a, a:visited {
     color: $color-submenu;

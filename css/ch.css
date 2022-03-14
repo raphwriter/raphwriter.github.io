@@ -65,15 +65,18 @@ a {
 
 :is(h1, h2, h3, h4, h5) {
   font-family: "League Spartan VF", Helvetica, Arial, sans-serif;
-  font-variation-settings: "wght" 250; }
+  font-variation-settings: "wght" 350; }
+
+h2 {
+  font-variation-settings: "wght" 350; }
 
 h3 {
   border-bottom: 1px solid #d3cdc5;
-  font-variation-settings: "wght" 450;
+  font-variation-settings: "wght" 350;
   color: #4c4e50; }
 
 h4 {
-  font-variation-settings: "wght" 450; }
+  font-variation-settings: "wght" 350; }
   h4 a, h4 a:visited {
     color: #4c4e50; }
   h4 a:hover {

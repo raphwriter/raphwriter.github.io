@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/ch.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <title>Carolina Hüttinger</title>
 </head>
 <body>
@@ -17,15 +20,12 @@
         <h2>Lektorat &middot; Redaktion &middot; Leichte Sprache</h2>
     </div>
 </div>
-<!--</div>-->
 <nav class="navbar navbar-expand-lg sticky-top bg-magenta text-white" id="menu">
     <div class="container">
-
-        <!--        <a class="navbar-brand" href="#">Menü</a>-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white">MENÜ</span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <div class="navbar-nav">
                 <a class="nav-link" href="index.html#leistungen">Leistungen</a>
                 <a class="nav-link" href="index.html#ablauf">Ablauf</a>
@@ -36,7 +36,6 @@
         </div>
     </div>
 </nav>
-
 <div>
     <img class="mw-100" src="img/linie.png" alt="Line">
 </div>
@@ -57,9 +56,8 @@
                 Umsatzsteuerbefreit gemäß Kleinunternehmerregelung <br>
                 Mitglied der WKÖ, WKS <br>
             </p>
-
             <p>
-                anwendbares Berufsrecht: Gewerbeordnung, aufrufbar unter <a href="https://www.ris.bka.gv.at">www.ris.bka.gv.at</a>
+                Anwendbares Berufsrecht: Gewerbeordnung, aufrufbar unter <a href="https://www.ris.bka.gv.at">www.ris.bka.gv.at</a>
             </p>
             <p>
                 Gewerbebehörde: Magistrat der Stadt Salzburg</p>
@@ -72,9 +70,10 @@
             <h3>Datenerfassung auf dieser Website</h3>
             <p>Im Zuge der Nutzung dieser Website werden von mir als Betreiberin der Website keine personenbezogenen Daten ermittelt, verarbeitet oder genutzt. Auf dieser Website werden außerdem keine
                 Cookies, Social-Media-Plug-Ins oder Webapplikationen eingesetzt.</p>
-
             <h3>Datenerfassung durch Web-Host</h3>
-            <p>Diese Website wird bei www.webspace.at gehostet, deren Webserver Logfiles erzeugen, welche folgende Informationen beinhalten:
+            <p>
+                Diese Website wird bei www.webspace.at gehostet, deren Webserver Logfiles erzeugen, welche folgende Informationen beinhalten:
+            </p>
             <ul>
                 <li>die aufgerufene Seite (URL)</li>
                 <li>der Browser bzw. die Browserversion</li>
@@ -83,17 +82,14 @@
                 <li>IP-Adresse des zugreifenden Rechners</li>
                 <li>Datum und Uhrzeit der Serveranfrage</li>
             </ul>
-            </p>
             <h3>Datenverarbeitung bei Kontaktaufnahme</h3>
             <p>Sofern Sie per E-Mail, Telefon oder Post mit mir Kontakt aufnehmen, werden Ihre dadurch bekannt gegebenen personenbezogenen Daten wie z.B. Name, E-Mail-Adresse, Telefonnummer oder Postanschrift lediglich zum Zwecke der Bearbeitung Ihrer
                 Anfrage verarbeitet und gespeichert. Im Falle einer Geschäftsbeziehung werden Ihre Daten im Rahmen der gesetzlichen Aufbewahrungspflicht gespeichert und zur Durchführung vorvertraglicher Maßnahmen bzw. Erfüllung Ihres Auftrages verarbeitet
                 (Art. 6 Abs 1 lit b DSGVO). Ihre Daten werden dabei ohne Ihre ausdrückliche Zustimmung und abgesehen von gesetzlichen Verpflichtungen nicht an andere Empfänger*innen weitergegeben.</p>
-
             <h3>Ihre Rechte</h3>
             <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre
                 datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich an mich wenden oder sich bei der Aufsichtsbehörde beschweren. In Österreich ist dies die Datenschutzbehörde (Hohenstaufengasse 3, 1010 Wien,
                 dsb@dsb.gv.at). Meine Kontaktdaten finden Sie im oben angeführten Impressum.</p>
-
         </div>
     </div>
     <div class="footer text-center">
@@ -101,5 +97,15 @@
     </div>
 </div>
 <script src="js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarSupportedContent')
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false})
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            bsCollapse.toggle()
+        })
+    })
+</script>
 </body>
 </html>
