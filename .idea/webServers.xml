@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="15794b53-6500-4292-be59-10c3a31b24fc" name="textbearbeitung.at" url="https://textbearbeitung.at">
+        <fileTransfer rootFolder="/httpdocs" host="116.202.87.213" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
